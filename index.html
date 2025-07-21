@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 p-0 overflow-x-hidden bg-black text-white">
+
+  <section class="relative h-screen w-full bg-[url('images/bg.jpg')] bg-cover bg-center">
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+
+    <!-- Header -->
+    <header class="relative z-10 flex items-center justify-between px-4 sm:px-12 py-4">
+      <img 
+        src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" 
+        alt="Netflix Logo" 
+        class="h-12 bg-opacity-70 px-3 py-1" 
+      />
+
+      <!--Sign In -->
+      <div class="flex items-center gap-3">
+        <label for="lang-select" class="sr-only">Language</label>
+        <select id="lang-select" class="bg-black bg-opacity-60 text-white px-3 py-1 rounded text-sm">
+          <option>English</option>
+          <option>Hindi</option>
+        </select>
+        <button class="bg-red-600 hover:bg-red-700 px-4 py-1 rounded text-sm font-semibold">
+          Sign In
+        </button>
+      </div>
+    </header>
+
+    
+    <main class="relative z-10 flex flex-col items-center justify-center text-center h-[calc(100vh-80px)] px-4">
+      <div class="max-w-2xl w-full">
+        <h1 class="text-3xl sm:text-5xl font-extrabold leading-snug sm:leading-tight">
+          Unlimited movies, <br class="hidden sm:block">TV shows and more
+        </h1>
+        <p class="text-lg sm:text-xl mt-4 font-medium">
+          Starts at ₹149. Cancel at any time.
+        </p>
+        <p class="text-sm sm:text-base mt-2">
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+
+        <!-- Email Form -->
+        <form class="mt-6 w-full flex flex-col sm:flex-row items-center gap-3 px-4 sm:px-0" role="form" aria-label="Email signup form">
+          <label for="email" class="sr-only">Email address</label>
+          <input 
+            id="email"
+            type="email" 
+            placeholder="Email address" 
+            class="bg-black text-white px-4 py-3  rounded sm:rounded-l-md w-full "
+            required
+          />
+        <button 
+  class="bg-red-600 hover:bg-red-700 px-6 py-3 text-white font-semibold rounded sm:rounded-r-md w-full sm:w-auto whitespace-nowrap"
+>
+  Get Started &gt;
+</button>
+
+        </form>
+      </div>
+    </main>
+
+  </section>
+</body>
+</html>

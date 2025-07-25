@@ -1,4 +1,4 @@
-# Movie-Platform-Clone 🎬
+# Netflix-Clone 🎬
 
 A fully responsive Netflix landing page clone built using **HTML5** and **Tailwind CSS**.  
 This project replicates the visual design of Netflix's homepage for learning and practice purposes.
